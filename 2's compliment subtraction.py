@@ -112,14 +112,14 @@ def add_bin(bt1, bt2):
 
 
 def pos(add, bass):
-    add = add.removeprefix("1")
+    add = add.replace("1",'',1)
     if add.startswith("1"):
         print(f"\nCarry is generated. Discarding carry we get,\n    {add}")
         print("Since magnitude is 1, the answer is negative and in 2's Compliment,")
         neg(add, base)
     else:
         print(
-            "\nCarry is generated. Discarding carry we get,\n" + "  + " + ' '.join(textwrap.wrap(add.removeprefix('1'), 4)))
+            "\nCarry is generated. Discarding carry we get,\n" + "  + " + ' '.join(textwrap.wrap(add.replace('1','',1), 4)))
         if bass == 10:
             print(f"Since it is in decimal,")
             tot1 = 0
