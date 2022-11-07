@@ -118,8 +118,9 @@ def pos(add, bass):
         print("Since magnitude is 1, the answer is negative and in 2's Compliment,")
         neg(add, base)
     else:
+        add.replace('1','',1)
         print(
-            "\nCarry is generated. Discarding carry we get,\n" + "  + " + ' '.join(textwrap.wrap(add.replace('1','',1), 4)))
+            "\nCarry is generated. Discarding carry we get,\n" + "  + " + ' '.join(textwrap.wrap(add, 4)))
         if bass == 10:
             print(f"Since it is in decimal,")
             tot1 = 0
