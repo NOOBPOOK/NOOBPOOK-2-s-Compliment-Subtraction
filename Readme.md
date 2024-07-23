@@ -17,9 +17,11 @@ Positive answer with base 10
 ![alt text](image.png)
 
 Negative answer with base 10
+
 ![alt text](image-1.png)
 
 Positive answer with base 8
+
 ![alt text](image-2.png)
 
 NOTE: Hexadecimal part is not 100% done and contain errors while doing subtraction part,
